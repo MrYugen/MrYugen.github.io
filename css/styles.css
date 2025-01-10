@@ -1,0 +1,629 @@
+/*Selector Universal*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS General de Elementos*/
+body{
+    background: linear-gradient(45deg, #222, #444);
+    color: white;
+    font: 200 14px "Poppins", sans-serif;    
+}
+h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #ffc900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+}
+h3{
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 65px;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    padding-top: 8px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: #00c4b3;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #ffc900;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    section {
+        padding: 10px 20px;
+    }
+}
+
+p{
+    text-align: justify;
+}
+
+i{
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+    margin-right: 10px;
+}
+
+section{
+    padding: 10px 100px 10px 100px;
+}
+
+/*CSS Clases e ID's*/
+.hastag{
+    color: #ffc900;
+}
+
+/* Iconos RRSS */
+/* Estilo base para todos los iconos */
+#redessociales li a i {
+    color: #ffffff;               /* Blanco por defecto */
+    transition: color 0.3s ease;  /* Animación suave */
+}
+
+/* Estilos individuales en :hover (pasar el ratón) */
+#redessociales li a.behance:hover i {
+    color: #1769ff; /* Color oficial Behance */
+}
+
+#redessociales li a.linkedin:hover i {
+    color: #0A66C2; /* Color oficial LinkedIn */
+}
+
+#redessociales li a.facebook:hover i {
+    color: #1877F2; /* Color oficial Facebook */
+}
+
+#redessociales li a.instagram:hover i {
+    color: #E1306C; /* Color oficial Instagram */
+}
+
+#redessociales li a.x_twitter:hover i {
+    color: #1da1f2; /* Color oficial de X/Twitter */
+}
+
+#redessociales li a.kickstarter:hover i {
+    color: #00c4b3; /* Un verde característico de Kickstarter */
+}
+
+#redessociales{
+    margin-top: 20px;
+}
+
+#inicio{
+    background-image: url("../images/inicio2.png");
+    min-height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+#inicio h2{
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #ffc900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#inicio h3{
+    font-weight: bold;
+    font-size: 25px;
+    color:#ffffff;
+    text-shadow: 0 0 8px #fff;
+}
+
+/*Grid: Sobre Mi*/
+#sobre_mi{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+#sobre_mi h2{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#sobre_mi p{
+    font-size: 16px;
+}
+
+#experiencia{
+    background-color: white;
+    color:#222;
+}
+
+#experiencia h2,#porfolio h2,#contact h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#experiencia h3,#porfolio h3,#contact h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#porfolio{
+    border-top: 1px solid #ffc900;
+}
+
+#porfolio h4{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#logo{
+    padding-top: 0px;
+}
+
+/* Cada tarjeta se muestra en un ancho de "100% / nº de tarjetas" 
+   Si vas a mostrar más o menos de una tarjeta en pantalla, ajusta. */
+#card1 {
+    width: 100%;
+    max-width: 275px; /* ancho máximo de cada carta */
+    margin: 0 auto;
+    background: #467b9d;
+    border: 10px solid #467b9d;
+    border-top: 0px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* Para asegurarnos de que se ve “vertical” */
+    min-height: 450px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.card-title1 {
+    background: #467b9d; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.card-footer1 {
+    background: #dae9d2;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #272424;
+}
+
+#card2 {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto;
+    background: #e63947;
+    border: 10px solid #e63947;
+    border-top: 0px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    min-height: 450px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.card-title2 {
+    background: #e63947; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.card-footer2 {
+    background: #fff9de;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #272424;
+}
+
+#card3 {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto;
+    background: #f5a261;
+    border: 10px solid #f5a261;
+    border-top: 0px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    min-height: 450px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.card-title3 {
+    background: #f5a261; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.card-footer3 {
+    background: #c8e1e3;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #272424;
+}
+
+#card4 {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto;
+    background: #2a9d8f;
+    border: 10px solid #2a9d8f;
+    border-top: 0px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    min-height: 450px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.card-title4 {
+    background: #2a9d8f; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.card-footer4 {
+    background: #ffe889;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #272424;
+}
+
+  /* Imagen del proyecto */
+.card-image {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Para que se adapte al espacio */
+}
+
+  /* Link dentro de la tarjeta */
+.card-link {
+    display: block;
+    margin-top: 10px;
+    padding: 0.5rem 0.5rem;
+    background: #223d43;
+    color: #ece2e2;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#experiencia h4{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  /* Contenedor de cada gran bloque (Diseño, Programación, Otras Skills) */
+.skill-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+    /* El color de fondo lo ajustamos según la clase */
+}
+
+.diseño {
+    background-color: #8d99ae; /* Gris azulado aproximado */
+}
+
+.programming {
+    background-color: #9b5de5; /* Morado aproximado */
+}
+
+.other-skills {
+    background-color: #ffc300; /* Amarillo aproximado */
+}
+
+  /* Imagen a la izquierda */
+.skill-image {
+    flex: 0 0 30%; /* Ajusta para darle espacio a la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.skill-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+
+  /* Contenido de texto y barras a la derecha */
+.skill-content {
+    flex: 1;
+    padding: 1rem;
+    color: #000;
+}
+
+.skill-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+  /* Cada fila de skill */
+.skill-item {
+    margin-bottom: 1.2rem;
+}
+
+  /* Skill-info con grid para alinear nombre y porcentaje */
+.skill-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: 600;
+}
+
+.skill-percent {
+    font-weight: 600;
+}
+
+  /* Barra de progreso (fondo) */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    overflow: hidden; /* Para que la barra coloreada no se salga */
+}
+
+  /* Barra interior (valor) */
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+  /* Contenedor que aloja todo el contenido en dos columnas (izquierda y derecha) */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que se adapte en pantallas pequeñas */
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+  /* Lado izquierdo */
+.contact-left {
+    flex: 1 1 40%; /* Se ajusta, mínimo ~40% de ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Espacio para pantallas pequeñas */
+}
+
+  /* Imagen */
+.contact-image img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+  /* Emails */
+.contact-emails{
+    justify-content:left;
+}
+.contact-emails p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    text-align:left;
+}
+
+  /* Frases graciosas */
+.contact-funny-lines{
+    margin-top: 15px;
+}
+
+.contact-funny-lines p {
+    font-size: 1rem;
+    color: #ffc900;
+    margin: 0.3rem 0;
+    text-align: left;
+    font-style: italic;
+}
+
+  /* Lado derecho */
+.contact-right {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+  /* Formulario */
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+  /* Labels e inputs */
+.contact-form label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #00c4b3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #EEE;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+  /* Botón Enviar */
+.contact-form button {
+    background-color: #00c4b3;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #ffc900; 
+}
+
+  /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    .contact-left, 
+    .contact-right {
+    flex: 1 1 100%;
+    max-width: 500px;
+    }
+    .contact-form {
+    width: 100%;
+    }
+}
+
+footer {
+    background-color: #00c4b3; 
+    color: #000;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.footer-credits {
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+  /* Diseño Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo-section {
+    text-align: center;
+    margin-bottom: 10px;
+    }
+}
