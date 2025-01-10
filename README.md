@@ -58,8 +58,18 @@ En el futuro:
 
 ## 📷 Capturas de Pantalla
 
-Proximamente
+### Sobre Mi
+![Captura de la sección Sobre Mi](images/Seccion_Inicio_Nav.png)
 
+### Porftolio
+![Captura de la sección Portfolio](images/Seccion_Portfolio.png)
+
+### Experiencia - Skills
+![Captura de la sección Portafolio](images/EXP-SKILLS_Diseño.png)
+![Captura de la sección Portafolio](images/EXP-SKILLS_ProSkills.png)
+
+### Contacto
+![Captura de la sección Contacto](images/Seccion_Contacto.png)
 ---
 
 ## 🤝 Contribuciones
